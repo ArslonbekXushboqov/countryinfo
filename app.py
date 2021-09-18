@@ -8,7 +8,7 @@ def main():
     if request.args.get('davlat'):
         query = request.args.get('davlat')
     else:
-    	return "<b>Ushbu api davlatlar haqida ma'lumot qidirish uchun!<br>Namuna:<b> <code>https://countryinfouz.herokuapp.com?davlat=Uzbekistan</code> <br><br><i>Developer:</i> <a href='https://t.me/LiderBoY'>Arslonbek</a>"
+    	return "<h2><b>Ushbu api davlatlar haqida ma'lumot qidirish uchun!</h2><br><br><h4>Namuna: <b><code>https://countryinfouz.herokuapp.com/?davlat=Uzbekistan</code></h4<br><br><h1><i>👨🏻‍💻 Developer:</i> <a href='https://t.me/LiderBoY'>Arslonbek</a></h1>"
         
     country = CountryInfo(query)
     info = country.info()
